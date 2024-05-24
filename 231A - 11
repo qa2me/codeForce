@@ -1,0 +1,23 @@
+import java.util.*;
+public class Mainn {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int first = scan.nextInt();
+        int imp=0;
+        for(int i=0 ; i<first; i++){
+            int first2 = scan.nextInt();
+            int first3 = scan.nextInt();
+            int first4= scan.nextInt();
+            if(first2+first3+first4>=2){
+                imp++;
+            }
+        }
+        System.out.println(imp);
+        
+    }
+    
+}
