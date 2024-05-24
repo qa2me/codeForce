@@ -1,0 +1,21 @@
+import java.util.*;
+public class Mainn {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int first = scan.nextInt();
+        int next = scan.nextInt();
+        int years=0;
+        while(first<=next){
+            first*=3;
+            next*=2;
+            years++;
+        }
+        System.out.println(years);
+        
+    }
+    
+}
