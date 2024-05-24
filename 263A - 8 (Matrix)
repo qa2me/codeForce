@@ -1,0 +1,37 @@
+import java.util.*;
+import java.math.*;
+public class Mainn {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int row=0;
+        int colomun=0;
+        int foundR=0;
+        int foundC=0;
+        
+        
+        for(int i=0; i<5;i++){
+            row++;
+            for(int j =0 ;j<5;j++){
+                colomun++;
+                int number=scan.nextInt();
+                if(number ==1){
+                    foundR=row;
+                    foundC=colomun;
+                    break;
+                }
+                
+            }
+            colomun=0;
+            
+        }
+        int rowN=3-foundR;
+        int colN=3-foundC;
+        System.out.println(Math.abs(rowN)+Math.abs(colN));
+        
+    }
+    
+}
