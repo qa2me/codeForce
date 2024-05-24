@@ -1,0 +1,29 @@
+import java.util.*;
+public class Mainn {
+ 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int games = scan.nextInt();
+        String res=scan.next();
+        int anton=0;
+        int dankin=0;
+        
+        for(int i = 0 ; i<games;i++){
+            if((res.charAt(i))=='D') dankin++;
+            else if(res.charAt(i)=='A') anton++;
+            
+        }
+        if(anton>dankin){
+            System.out.println("Anton");
+        }
+        else if(dankin>anton){
+            System.out.println("Danik");
+        }
+        else{System.out.println("Friendship");}
+        
+    }
+    
+}
